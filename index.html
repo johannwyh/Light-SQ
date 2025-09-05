@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Light-SQ</title>
+
+    <meta name="description" content="Project page for Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="https://johann.wang/Light-SQ/img/light-sq_representative.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1044">
+    <meta property="og:image:height" content="1154">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://johann.wang/Light-SQ/"/>
+    <meta property="og:title" content="Light-SQ" />
+    <meta property="og:description" content="Project page for Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes" />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Light-SQ" />
+    <meta name="twitter:description" content="Project page for Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes" />
+    <meta name="twitter:image" content="https://johann.wang/Light-SQ/img/light-sq_representative.jpg" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <!-- <link rel="stylesheet" href="css/app.css"> -->
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <!-- model viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main" style="width: 100%; max-width: 1500px;">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes<br>
+                <small>
+                    SIGGRAPH Asia 2025
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://johann.wang">
+                            Yuhan Wang<sup>1</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://chenweikai.github.io/">
+                            Weikai Chen<sup>2</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://hzykent.github.io/">
+                            Zeyu Hu<sup>2</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com.hk/citations?hl=zh-TW&user=o41-Nj8AAAAJ&view_op=list_works&sortby=pubdate">
+                            Runze Zhang<sup>2</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://yd-yin.github.io/">
+                            Yingda Yin<sup>2</sup>
+                        </a>
+                    </li>
+                    <li>
+                        Ruoyu Wu<sup>2</sup>
+                    </li>
+                    <li>
+                        Keyang Luo<sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=QNnWmasAAAAJ&hl=zh-CN">
+                            Shengju Qian<sup>2</sup>
+                        </a>
+                    </li>
+                    <li>
+                        Yiyan Ma<sup>2</sup>
+                    </li>
+                    <li>
+                        Hongyi Li<sup>2</sup>
+                    </li>
+                    <li>
+                        Yuan Gao<sup>2</sup>
+                    </li>
+                    <li>
+                        Yuhuan Zhou<sup>2</sup>
+                    </li>
+                    <li>
+                        Hao Luo<sup>2</sup>
+                    </li>
+                    <li>
+                        Wan Wang<sup>2</sup>
+                    </li>
+                    <li>
+                        Xiaobin Shen<sup>2</sup>
+                    </li>
+                    <li>
+                        Zhaowei Li<sup>2</sup>
+                    </li>
+                    <li>
+                        Kuixin Zhu<sup>2</sup>
+                    </li>
+                    <li>
+                        Chuanlang Hong<sup>2</sup>
+                    </li>
+                    <li>
+                        Yueyue Wang<sup>2</sup>
+                    </li>
+                    <li>
+                        Lijie Feng<sup>2</sup>
+                    </li>
+                    <li>
+                        Xin Wang<sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="https://www.mmlab-ntu.com/person/ccloy/">
+                            Chen Change Loy<sup>1</sup>
+                        </a>
+                    </li>
+                    
+                    <br><sup>1</sup>S-Lab, Nanyang Technological University &emsp; <sup>2</sup> LIGHTSPEED &emsp;
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="">
+                            <image src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01-p-500.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/johannwyh/Light-SQ">
+                            <img src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://huggingface.co/spaces/FrozenBurning/3DTopia-XL">
+                                <img src="img/hf-icon.png" height="60px">
+                                    <h4><strong>Demo</strong></h4>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+        <div class="row text-center" style="font-size:large;"><strong>TL;DR:</strong> 
+            We present Light-SQ, a novel superquadric-based optimization framework that explicitly emphasizes structure-awareness.<br><br>
+        </div>
+
+        <div class="raw">
+            <div class="col-md-8 col-md-offset-2">
+                <!-- <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="img/teaser.mp4" type="video/mp4" />
+                </video> -->
+                <p style="text-align:center;">
+                    <image src="img/light-sq_representative.jpg" class="img-responsive" alt="scales">
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                        In user-generated-content (UGC) applications, non-expert users often rely on image-to-3D generative models to create 3D assets. In this context, primitive-based shape abstraction offers a promising solution for UGC scenarios by compressing high-resolution meshes into compact, editable representations. Towards this end, effective shape abstraction must therefore be structure-aware, characterized by low overlap between primitives, part-aware alignment, and primitive compactness. We present Light-SQ, a novel superquadric-based optimization framework that explicitly emphasizes structure-awareness from three aspects. (a) We introduce SDF carving to iteratively udpate the target signed distance field, discouraging overlap between primitives. (b) We propose a block-regrow-fill strategy guided by structure-aware volumetric decomposition, enabling structural partitioning to drive primitive placement. (c) We implement adaptive residual pruning based on SDF update history to surpress over-segmentation and ensure compact results. In addition, Light-SQ supports multiscale fitting, enabling localized refinement to preserve fine geometric details. To evaluate our method, we introduce 3DGen-Prim, a benchmark extending 3DGen-Bench with new metrics for both reconstruction quality and primitive-level editability. Extensive experiments demonstrate that Light-SQ enables efficient, high-fidelity, and editable shape abstraction with superquadrics for complex generated geometry, advancing the feasibility of 3D UGC creation.
+                </p>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Comparison with Multiview Diffusion Methods
+                </h3>
+                <div class="col-md-10 col-md-offset-1">
+                    <p style="text-align:center;">
+                        <image src="img/cmp_mvdiff_1.png" class="img-responsive" alt="scales">
+                    </p>
+                    <p style="text-align:center;">
+                        <image src="img/cmp_mvdiff_2.png" class="img-responsive" alt="scales">
+                    </p>
+                    <p style="text-align:center;">
+                        <image src="img/cmp_mvdiff_3.png" class="img-responsive" alt="scales">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Comparison with Monocular Reconstruction Methods
+                </h3>
+                <div class="col-md-10 col-md-offset-1">
+                    <p style="text-align:center;">
+                        <image src="img/cmp_mrecon.png" class="img-responsive" alt="scales">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <b>Mesh Attention</b> for Cross-view Consistency Preservation
+                </h3>
+                <div class="col-md-10 col-md-offset-1">
+                    <p style="text-align:center;">
+                        <image src="img/crossview.png" class="img-responsive" alt="scales">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Demo Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VdMUGprZcXQ?si=KQsypzQSPKwZ0TFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10" style="padding: 0%; margin: 0%;">
+                    <textarea id="bibtex" class="form-control" readonly>
+Coming Soon
+                    </textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                The website template is borrowed from <a href="https://jonbarron.info/mipnerf/">Mip-NeRF</a>
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
