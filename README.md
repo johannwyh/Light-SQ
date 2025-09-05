@@ -21,5 +21,10 @@ Generated Meshes</h1>
 
 If you find our work useful for your research, please consider citing our paper:
 ```bibtex
-Coming Soon
+@inproceedings{wang2025light,
+  title={Light-SQ: Structure-aware Shape Abstraction with Superquadrics for Generated Meshes},
+  author={Wang, Yuhan and Chen, Weikai and Hu, Zeyu and Zhang, Runze and Yin, Yingda and Wu, Ruoyu and Luo, Keyang and Qian, Shengju and Ma, Yiyan and Li, Hongyi and Gao, Yuan and Zhou, Yuhuan and Luo, Hao and Wang, Wan and Shen, Xiaobin and Li, Zhaowei and Zhu, Kuixin and Hong, Chuanlang and Wang, Yueyue and Feng, Lijie and Wang, Xin and Loy, Chen Change},
+  booktitle={SIGGRAPH Asia},
+  year={2025}
+}
 ```
