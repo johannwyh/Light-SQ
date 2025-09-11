@@ -44,7 +44,7 @@
     <style>
         .mesh-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: var(--spacing-md);
             margin: var(--spacing-md) 0;
         }
@@ -57,7 +57,7 @@
 
         model-viewer {
             width: 100%;
-            height: 250px;
+            height: 200px;
             --poster-color: transparent;
             --progress-bar-color: #0066cc;
         }
@@ -235,60 +235,52 @@
                 </p>
             </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Comparison with Multiview Diffusion Methods
-                </h3>
-                <div class="col-md-10 col-md-offset-1">
-                    <p style="text-align:center;">
-                        <image src="img/cmp_mvdiff_1.png" class="img-responsive" alt="scales">
-                    </p>
-                    <p style="text-align:center;">
-                        <image src="img/cmp_mvdiff_2.png" class="img-responsive" alt="scales">
-                    </p>
-                    <p style="text-align:center;">
-                        <image src="img/cmp_mvdiff_3.png" class="img-responsive" alt="scales">
-                    </p>
-                </div>
-            </div>
-        </div>
+        
+        <!--
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Comparison with Monocular Reconstruction Methods
+                    Primitive Abstraction Results
                 </h3>
-                <div class="col-md-10 col-md-offset-1">
-                    <p style="text-align:center;">
-                        <image src="img/cmp_mrecon.png" class="img-responsive" alt="scales">
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    <b>Mesh Attention</b> for Cross-view Consistency Preservation
-                </h3>
-                <div class="col-md-10 col-md-offset-1">
-                    <p style="text-align:center;">
-                        <image src="img/crossview.png" class="img-responsive" alt="scales">
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Demo Video
-                </h3>
-                <div class="text-center">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VdMUGprZcXQ?si=KQsypzQSPKwZ0TFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+
+                <div class="mesh-grid">
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/1.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 1"></model-viewer>
+                        <p>VAE Reconstruction 1</p>
+                    </div>
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/2.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 2"></model-viewer>
+                        <p>VAE Reconstruction 2</p>
+                    </div>
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/3.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 3"></model-viewer>
+                        <p>VAE Reconstruction 3</p>
+                    </div>
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/4.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 4"></model-viewer>
+                        <p>VAE Reconstruction 4</p>
+                    </div>
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/5.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 5"></model-viewer>
+                        <p>VAE Reconstruction 5</p>
+                    </div>
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/6.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 6"></model-viewer>
+                        <p>VAE Reconstruction 6</p>
+                    </div>
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/7.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 7"></model-viewer>
+                        <p>VAE Reconstruction 7</p>
+                    </div>
+                    <div class="mesh-item">
+                        <model-viewer src="vae_meshes/8.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 8"></model-viewer>
+                        <p>VAE Reconstruction 8</p>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+        -->
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -306,45 +298,6 @@
                 </div>
             </div>
         </div>
-        
-        <section>
-            <div class="mesh-grid">
-                <!-- VAE Reconstruction Models -->
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/1.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 1"></model-viewer>
-                    <p>VAE Reconstruction 1</p>
-                </div>
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/2.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 2"></model-viewer>
-                    <p>VAE Reconstruction 2</p>
-                </div>
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/3.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 3"></model-viewer>
-                    <p>VAE Reconstruction 3</p>
-                </div>
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/4.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 4"></model-viewer>
-                    <p>VAE Reconstruction 4</p>
-                </div>
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/5.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 5"></model-viewer>
-                    <p>VAE Reconstruction 5</p>
-                </div>
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/6.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 6"></model-viewer>
-                    <p>VAE Reconstruction 6</p>
-                </div>
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/7.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 7"></model-viewer>
-                    <p>VAE Reconstruction 7</p>
-                </div>
-                <div class="mesh-item">
-                    <model-viewer src="vae_meshes/8.glb" auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y" alt="VAE Reconstruction Model 8"></model-viewer>
-                    <p>VAE Reconstruction 8</p>
-                </div>
-            </div>
-        </section>
-        
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
